@@ -8,6 +8,7 @@ int main(void) {
     int maxx, maxy, halfx, halfy;
 
     initscr();
+    refresh();
 
     getmaxyx(stdscr, maxy, maxx);
     halfx = maxx/2;

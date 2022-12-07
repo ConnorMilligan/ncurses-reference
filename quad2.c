@@ -8,6 +8,7 @@ int main(void) {
     int maxx, maxy, halfx, halfy;
 
     initscr();
+    refresh();
     start_color();
     init_pair(1, COLOR_BLACK, COLOR_BLUE);
     init_pair(2, COLOR_BLACK, COLOR_RED);
@@ -39,7 +40,7 @@ int main(void) {
     wrefresh(c);
 
     mvwaddstr(d, 0, 0, "This is window D\n");
-    wbkgd(d, COLOR_PAIR(3));
+    wbkgd(d, COLOR_PAIR(4));
     wrefresh(d);
 
     getch();
