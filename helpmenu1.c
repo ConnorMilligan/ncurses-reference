@@ -17,6 +17,7 @@ int main(void) {
     mvwaddstr(help,1,7,"Help menu Screen\n");
     mvwaddstr(help,5,3,"Press the ~ key to quit\n");
     mvwaddstr(help,8,4,"Help menu Screen\n");
+    box(help, 0, 0);
 
     addstr("Typer program\n");
     addstr("Press + for help\n\n");
